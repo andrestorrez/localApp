@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    @base_title = "Users"
   end
 
   # GET /users/1

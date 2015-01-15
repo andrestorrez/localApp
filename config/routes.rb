@@ -1,13 +1,19 @@
 Rails.application.routes.draw do
-  resources :microposts
+  get 'users/new'
 
-  resources :users
+  get 'home' => 'static_pages#home'
+
+  get 'about' => 'static_pages#about'
+
+  get 'singup' => 'users#new'
+
+  resources :microposts
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'main#index'
+  root 'static_pages#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -18,8 +24,8 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
-resources :users
-resources :microposts
+  # resources :users
+  resources :microposts
   # Example resource route with options:
   #   resources :products do
   #     member do

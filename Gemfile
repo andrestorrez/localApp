@@ -19,12 +19,13 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+# gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', '~> 0.3.0'
 
 gem 'pg', '~> 0.18.1'
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+ gem 'bcrypt', '~> 3.1.9'
 
 # Use Unicorn as the app server
 
@@ -44,6 +45,11 @@ group :development, :test do
 
   # Use sqlite3 as the database for Active Record
   #gem 'sqlite3'
+
+
+gem 'rake-compiler', '~> 0.9.2'
+gem 'rdoc', '~> 3.12'
+gem 'rspec', '>= 3'
 
 end
 

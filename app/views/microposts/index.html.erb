@@ -1,7 +1,5 @@
 <p id="notice"><%= notice %></p>
-
 <h1>Listing Microposts</h1>
-
 <table class="table table-bordered">
   <thead>
     <tr>
@@ -10,7 +8,6 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
   <tbody>
     <% @microposts.each do |micropost| %>
       <tr>
@@ -23,7 +20,5 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
-
 <%= link_to 'New Micropost', new_micropost_path %>

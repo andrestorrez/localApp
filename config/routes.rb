@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'users/new'
 
-  get 'home' => 'static_pages#home'
+  get '/' => 'static_pages#home'
 
   get 'about' => 'static_pages#about'
 
@@ -24,7 +24,7 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
-  # resources :users
+  resources :users
   resources :microposts
   # Example resource route with options:
   #   resources :products do

@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.3.0'
 gem 'pg', '~> 0.18.1'
 
 # Use ActiveModel has_secure_password
- gem 'bcrypt', '~> 3.1.9'
+gem 'bcrypt', '~> 3.1.9'
 
 # Use Unicorn as the app server
 
@@ -47,9 +47,11 @@ group :development, :test do
   #gem 'sqlite3'
 
 
-gem 'rake-compiler', '~> 0.9.2'
-gem 'rdoc', '~> 3.12'
-gem 'rspec', '>= 3'
+  gem 'rake-compiler', '~> 0.9.2'
+  gem 'rdoc', '~> 3.12'
+  gem 'rspec', '>= 3'
+
+  gem 'htmlbeautifier'
 
 end
 
@@ -57,4 +59,3 @@ group :production do
   gem 'rails_12factor', '0.0.2'
   gem 'unicorn'
 end
-
